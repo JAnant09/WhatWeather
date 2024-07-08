@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Notes</title>
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div class="heading">Your Notes</div>
+
+        <div class="header-buttons">
+
+            <div class="create-note-container">
+                <button id="create-note-button" class="transparent">
+                    <img src="assets/images/Light-theme-icons/createnotelight.svg" id="create-note-button-img"  class="header-button-img-width"  alt="Create new note">
+                </button>
+            </div>
+
+            <div class="change-theme-container">
+                <button id="change-theme-button" class="transparent">
+                    <img src="assets/images/changetheme.svg" id="change-theme-button-img" class="header-button-img-width"  alt="Change app theme">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="divider-contanier">
+        <div class="divider"></div>
+    </div>
+
+    <main>
+
+        <div class="notes-section">
+
+            <div class="notes-card">
+                <div class="notes-card-header">
+                    <input type="text" name="Note title" id="note-title" placeholder="Title">
+
+                    <button id="delete-note-button" class="transparent">
+                        <img src="assets/images/Light-theme-icons/deletenotelight.svg" alt="" id="delete-note-button-img" width="15px">
+                    </button>
+                </div>
+                <input type="text" name="Notes" id="note-content"  placeholder="Enter your note">
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

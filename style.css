@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+/* //////////////Utility Classes//////////////// */
+.header-button-img-width{
+    width: 35px;
+}
+
+.transparent{
+    background-color: rgba(0, 0, 0, 0); 
+    border: none;
+}
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////// */
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 100px;
+}
+
+header{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 50% 20%;
+    place-content: center;
+    margin-bottom: 5px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.header-buttons{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+
+.divider-contanier{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider{
+    border: 2px solid black;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+main{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notes-section{
+    /* border: 2px solid black; */
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    overflow-y: auto;
+}
+
+.notes-card{
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.notes-card-header{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#note-title{
+    font-size: 25px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+#note-content{
+    font-size: 15px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.notes-card input {
+    border: none; 
+    outline: none; 
+}
+  
+.notes-card input:focus,
+.notes-card input:active {
+    border: none; 
+    outline: none; 
+}
+
+#delete-note{
+    align-items: end;
+}
+  
+  
