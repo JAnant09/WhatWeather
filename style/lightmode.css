@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins' , sans-serif;
 }
-/* //////////////Utility Classes//////////////// */
+
 .header-button-img-width{
     width: 35px;
 }
@@ -14,14 +14,6 @@
     border: none;
 }
 
-
-
-
-
-
-
-
-/* ///////////////////////////////////////////////// */
 body{
     width: 100vw;
     height: 100vh;
@@ -103,26 +95,35 @@ main{
     align-items: center;
 }
 
-#note-title{
+.note-title{
     font-size: 25px;
     font-weight: normal;
     text-decoration: none;
     margin-bottom: 5px;
+    border: none;
+    outline: none;
 }
 
-#note-content{
+.note-content{
     font-size: 15px;
     font-weight: normal;
     text-decoration: none;
 }
 
-.notes-card input {
+.notes-card textarea {
+    border: none; 
+    outline: none; 
+    resize: none;
+}
+  
+.note-title input:focus,
+.notes-title input:active{
     border: none; 
     outline: none; 
 }
-  
-.notes-card input:focus,
-.notes-card input:active {
+
+.notes-card textarea:focus,
+.notes-card textarea:active {
     border: none; 
     outline: none; 
 }
@@ -130,5 +131,133 @@ main{
 #delete-note{
     align-items: end;
 }
+
+@media (max-width: 1260px) {
+    .notes-section {
+        /* border: 2px solid black; */
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 901px) {
+
+    body{
+        padding: 10px 20px;
+    }
+
+    header{
+        margin-bottom: 0px;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+
+    .header-button-img-width{
+        width: 25px;
+    }
+
+    .note-title{
+        font-size: 20px;
+    }
+
+    .note-content{
+        font-size: 12px;
+    }
+  
+}
+
+@media (max-width: 601px) {
+
+    body{
+        padding: 10px 20px;
+    }
+
+    .heading{
+        font-size: 25px;
+    }
+
+    .header-button-img-width{
+        width: 20px;
+    }
+
+    .note-title{
+        font-size: 15px;
+    }
+
+    .note-content{
+        font-size: 10px;
+    }
+  
+}
+
+@media (max-width: 501px){
+
+    body{
+        padding: 0px;
+    }
+
+    .heading{
+        font-size: 25px;
+    }
+
+    .header-button-img-width{
+        width: 20px;
+    }
+
+    .note-title{
+        font-size: 15px;
+    }
+
+    .note-content{
+        font-size: 10px;
+    }
+  
+}
+
+@media (max-width: 401px){
+
+    body{
+        padding: 0px;
+    }
+
+    header{
+        margin-bottom: -10px;
+    }
+
+    .heading{
+        font-size: 20px;
+    }
+
+    .header-button-img-width{
+        width: 15px;
+    }
+
+    .note-title{
+        font-size: 15px;
+    }
+
+    .note-content{
+        font-size: 10px;
+    }
+
+    .divider{
+        margin-bottom: 15px;
+    }
+
+
+}
+  
+
+
+
+
+
+
   
   
